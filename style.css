@@ -1,0 +1,289 @@
+
+/* Basic Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070b18;
+    color: white;
+}
+
+/* Navigation Bar */
+
+header {
+    background: #0c1428;
+    padding: 18px 7%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #16365e;
+}
+
+.logo {
+    color: #29c7ff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+
+    color: #29c7ff;
+}
+
+/* Home Section */
+
+.hero {
+    min-height: 560px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            #123d72 0%,
+            transparent 35%
+        ),
+        linear-gradient(120deg, #070b18, #101b35);
+}
+
+.hero-content {
+
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #29c7ff;
+}
+
+.hero p {
+    color: #bdcbe0;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Buttons */
+
+.btn {
+
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: #159de0;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0878b5;
+    transform: translateY(-2px);
+}
+
+/* General Sections */
+
+section {
+    padding: 75px 8%;
+
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #29c7ff;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aab9d0;
+    margin-bottom: 40px;
+}
+
+.about {
+    background: #0b1427;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #101b31;
+    border: 1px solid #1d3a5c;
+    padding: 25px;
+    border-radius: 13px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #29c7ff;
+    box-shadow: 0 5px 25px #008cff22;
+}
+
+.card .emoji {
+    font-size: 35px;
+    margin-bottom: 15px;
+
+}
+
+.card h3 {
+    color: #29c7ff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b7c5d9;
+    line-height: 1.7;
+}
+
+/* Interactive Tools */
+
+.tool-box {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: #101b31;
+    border: 1px solid #24527a;
+    border-radius: 14px;
+}
+
+
+.tool-box input {
+    width: 100%;
+    padding: 14px;
+    margin: 15px 0;
+    background: #07101f;
+    border: 1px solid #315071;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+}
+
+.result {
+    margin-top: 15px;
+    color: #29c7ff;
+    line-height: 1.6;
+}
+
+.small-note {
+    color: #8fa5c1;
+    font-size: 12px;
+    margin-top: 15px;
+
+    line-height: 1.6;
+}
+
+/* Quiz */
+
+.quiz-question {
+    color: white;
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    background: #152641;
+    border: 1px solid #315071;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: left;
+
+    transition: 0.2s;
+}
+
+.quiz-option:hover:not(:disabled) {
+    background: #174c70;
+}
+
+.quiz-option:disabled {
+    cursor: default;
+}
+
+/* Footer */
+
+footer {
+    padding: 25px;
+    background: #050914;
+    text-align: center;
+    color: #899bb5;
+    line-height: 2;
+}
+
+/* Mobile Design */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        padding: 80px 7%;
+        min-height: 450px;
+    }
+
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .tool-box {
+        padding: 22px;
+    }
+}

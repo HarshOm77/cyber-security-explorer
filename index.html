@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Security Explorer</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">🛡️ CYBER EXPLORER</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#attacks">Threats</a>
+            <a href="#safety">Safety</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>
+                Protect Your
+                <span>Digital World</span>
+            </h1>
+
+            <p>
+                Welcome to Cyber Security Explorer!
+                Discover online threats, learn how hackers
+
+                affect digital systems and understand how
+                to stay safe on the internet.
+            </p>
+
+            <a href="#about" class="btn">Explore Now →</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">What is Cyber Security?</h2>
+
+        <p class="subtitle">
+            Understanding the protection of our digital world
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="emoji">🔐</div>
+                <h3>Data Protection</h3>
+                <p>
+                    Protecting personal information, files and
+                    sensitive data from unauthorized access.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🌐</div>
+                <h3>Network Security</h3>
+                <p>
+                    Keeping computer networks and internet
+                    connections protected.
+                </p>
+            </div>
+
+            <div class="card">
+
+                <div class="emoji">🛡️</div>
+                <h3>Digital Safety</h3>
+                <p>
+                    Using technology safely and protecting
+                    ourselves from online threats.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cyber Threats -->
+    <section id="attacks">
+        <h2 class="section-title">Types of Cyber Threats</h2>
+
+        <p class="subtitle">
+            Learn about common online dangers
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="emoji">🎣</div>
+                <h3>Phishing</h3>
+                <p>
+                    Fake emails or messages designed to trick
+                    people into sharing passwords or personal
+                    information.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🦠</div>
+                <h3>Malware</h3>
+                <p>
+                    Malicious software designed to harm devices,
+                    disrupt systems or steal information.
+                </p>
+
+            </div>
+
+            <div class="card">
+                <div class="emoji">🔒</div>
+                <h3>Ransomware</h3>
+                <p>
+                    A type of malware that locks or encrypts
+                    files and demands payment.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">👤</div>
+                <h3>Identity Theft</h3>
+                <p>
+                    When someone uses another person's personal
+                    information without permission.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">💥</div>
+                <h3>DoS Attacks</h3>
+                <p>
+                    Attempts to make a website or online service
+                    unavailable to its users.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🔑</div>
+                <h3>Password Attacks</h3>
+                <p>
+                    Attempts to gain unauthorized access to
+                    accounts by compromising passwords.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Online Safety -->
+    <section class="about" id="safety">
+        <h2 class="section-title">Stay Safe Online</h2>
+
+        <p class="subtitle">
+            Follow these important cybersecurity habits
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="emoji">🔑</div>
+                <h3>Strong Passwords</h3>
+                <p>
+                    Use long, unique passwords for different
+                    accounts.
+                </p>
+
+            </div>
+
+            <div class="card">
+                <div class="emoji">📱</div>
+                <h3>Enable 2FA</h3>
+                <p>
+                    Use two-factor authentication wherever
+                    available.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🚫</div>
+                <h3>Avoid Suspicious Links</h3>
+                <p>
+                    Don't open unexpected links or attachments
+                    from unknown senders.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🔄</div>
+                <h3>Update Devices</h3>
+                <p>
+                    Keep your operating system and apps updated.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Password Checker -->
+    <section id="password">
+        <h2 class="section-title">Password Strength Checker</h2>
+
+        <p class="subtitle">
+            Try an example password and learn about password security
+        </p>
+
+        <div class="tool-box">
+
+            <h3>🔐 Test Password Strength</h3>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter an example password"
+                autocomplete="off"
+            >
+
+            <button class="btn" id="checkPasswordBtn">
+                Check Strength
+            </button>
+
+            <p class="result" id="passwordResult">
+                Your result will appear here.
+            </p>
+
+            <p class="small-note">
+
+                Educational demo only. Do not enter a real password.
+                Your input is checked locally and is not stored.
+            </p>
+        </div>
+    </section>
+
+    <!-- Cyber Quiz -->
+    <section class="about" id="quiz">
+        <h2 class="section-title">Cyber Security Quiz</h2>
+
+        <p class="subtitle">
+            Test your cybersecurity knowledge!
+        </p>
+
+        <div class="tool-box">
+
+            <h3 id="questionNumber">Question 1 of 5</h3>
+
+            <p class="quiz-question" id="question">
+                What does HTTPS help provide?
+            </p>
+
+            <div id="options"></div>
+
+            <p class="result" id="quizResult"></p>
+
+            <button class="btn" id="nextButton">
+                Next Question →
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>🛡️ Cyber Security Explorer</p>
+
+        <p>
+
+            School Exhibition Project |
+            Learn • Protect • Stay Safe
+        </p>
+
+        <p>© 2026 Cyber Explorer</p>
+    </footer>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
